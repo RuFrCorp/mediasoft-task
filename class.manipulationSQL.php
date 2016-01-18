@@ -12,6 +12,16 @@
 			//$connect = NULL;			
 		}
 		#Select
+		private $composition = array(
+			'SELECT' => ', ',
+			'FROM' => null,
+			'WHERE' => ' AND ',
+			'GROUP BY' => ',',
+			'HAVING' => ' AND ',
+			'ORDER BY' => ', ',
+			'LIMIT' => null,
+			'OFFSET' => null,
+		);
 		 function select($typeDB, $selctedData){				
 			return $this; 
 		}
